@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+}
+
+.div__container{
+    background-color: #fff;
+    padding: 36px;
+    min-width: 360px;
+    max-width: 540px;
+    /* width: 50%; */
+    box-shadow:  #aaa 1px 1px 1px 2px;
+}
+
+.form__containerHeading{
+    text-align: center;
+    margin-bottom: 12px;
+    color:#777;
+    font-weight: 700;
+}
+
+.form__container{
+    border-top: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.form__container input{
+    padding: 10px;
+    font-size: 16px;
+    justify-content: flex-end;
+    outline: none;
+    border: 1px solid #26e;
+}
+.form__container textarea{
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #26e;
+}
+.form__container label{
+    margin-top: 10px;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.form__postTitle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.form__postRole{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form__company{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form__skills{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form__experience{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form__anonymousConfirm span{
+  margin-left: 10px;
+}
+
+.form__submit{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form__submit button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #26e;
+    padding: 10px 30px 10px 30px;
+    color:#fff;
+    border: none;
+    border-radius: 6px;
+}

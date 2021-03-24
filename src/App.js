@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Card from "./components/Card";
+import SideDisplay from "./components/SideDisplay";
+import { FaPencilAlt } from "react-icons/fa";
+import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NewPost from "./components/NewPost";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact>
+            <div className="cards">
+              <div className="newPost__container">
+                <Link to="/new">
+                  Share your Interview experience with community <FaPencilAlt />
+                </Link>
+              </div>
+              <Card />
+              <Card />
+              <Card />
+            </div>
+            <div className="menu">
+              <SideDisplay />
+            </div>
+          </Route>
+          <Route path="/new">
+            <NewPost />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
