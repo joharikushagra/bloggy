@@ -46,7 +46,10 @@
     font-size: 16px;
     list-style:none ;
     margin-bottom: 10px;
+}
 
+.display__contentList li{
+    text-decoration: none;
 }
 
 @media screen and (max-width:600px){
@@ -59,3 +62,4 @@
         flex-direction: column;
     }
 }
+

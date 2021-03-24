@@ -8,7 +8,7 @@ background-color: #ccc !important;
 }
 
 .App{
-  padding: 50px;
+  padding: 120px;
   display: grid;
   grid-template-columns:  4fr 1fr; 
   column-gap: 20px;
@@ -33,6 +33,23 @@ background-color: #ccc !important;
 
 .cards{
   margin-left: 2.5rem;
+}
+
+.comment {
+  padding: 12px 24px;
+  margin: 12px 0;
+  border: 1px dashed #ccc;
+}
+
+.comment p {
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.comment div {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width:420px){
