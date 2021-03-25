@@ -29,7 +29,6 @@ function App({ fetchPosts, fetchComments, fetchUsers,userData, postData}) {
                 </Link>
               </div>
               {(postData&& userData) && postData.posts.map((post,i) => {
-                {/* console.log(userData.users[i]) */}
                 return <Card  key ={post.id} post={post} user={ userData.users[i]} />
               })}
             </div>

@@ -19,6 +19,8 @@ function NewPost() {
      const submitHandler = (e) => {
          e.preventDefault();
         dispatch(addPost(post));
+        e.target.value='';
+        alert("Your Post has been added!");
         history.push("/")
      }
 

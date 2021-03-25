@@ -17,6 +17,27 @@ export const fetchFailure =(error)=>{
         payload:error
     }
 }
+export const addUserComment =(payload)=>{
+    return {
+        type:'ADD_COMMENT',
+        payload
+    }
+}
+export const deleteComment =(payload)=>{
+    return {
+        type:'DELETE_COMMENT',
+        payload
+    }
+}
+
+export const updateComment =(payload)=>{
+    return {
+        type:'UPDATE_COMMENT',
+        payload
+    }
+}
+
+
 
 export const fetchComments = ()=>{
     return (dispatch)=>{

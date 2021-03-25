@@ -17,6 +17,7 @@ background-color: #ccc !important;
 .newPost__container{
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #fff;
   margin-bottom: 6px;
   padding: 10px;

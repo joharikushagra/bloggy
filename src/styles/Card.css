@@ -1,13 +1,15 @@
 .card__container{
     margin-bottom: 20px;
-    /* width: 50%; */
     padding: 20px;
     border: none;
     display: flex;
     flex-direction: column ;
     justify-content: center;
     background-color: #fff;
-    /* align-items: center; */
+}
+
+#details {
+    min-width: 80vw;
 }
 
 .card__author{
@@ -29,6 +31,10 @@
 .card__heading{
     margin-bottom: 12px;
     font-size: 1.5rem;
+}
+
+.card__headingTitle{
+    display: inline-block;
 }
 
 .card__headingLocation{
@@ -117,4 +123,14 @@
     padding: 10px;
     border-radius: 6px;
     /* margin-left: 20px; */
+}
+
+ .del {
+    background-color:#f42 !important;
+    margin-top: 12px;
+}
+ .update {
+    background-color:rgb(47, 86, 214) !important;
+    margin-top: 12px;
+    margin-left: 12px;
 }
